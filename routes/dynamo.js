@@ -22,4 +22,3 @@ const setPlaces = async () => {
 }
 
 setPlaces()
-
