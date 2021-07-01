@@ -2,8 +2,7 @@
   "name": "api-project",
   "version": "1.0.0",
   "description": "api",
-  "main": "index.js",
-
+  "main": "server/index.js",
   "scripts": {
     "dev:server": "nodemon --watch server",
     "start": "run-s build server",
