@@ -1,20 +1,15 @@
 const express = require('express');
+const cors = require("cors");
+const placesRoute = require('./routes/places')
 
-// This is how I should define the routes
-
-const BookingRouter = ("./Routes/booking")
-
-
-const app = express()
-
-app.use(express.json())
-
-// This how I should define the apis 
+const server = express()
+server.use(express.json())
+server.use(cors())
 
 
 
-// server.use("/api/v1", authRoutes)
-// server.use("/api/v1/users", userRoutes)
+server.use("/api/v1", placesRoute)
+
 
 
 module.exports = server
