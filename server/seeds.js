@@ -1,5 +1,5 @@
 // const axios = require('axios');
-const { addOrUpdatePlace, deletePlace, getPlaceById, getPlaces } = require('./Dynamo/places');
+const { addOrUpdatePlace, deletePlace, getPlaceById, getPlaces } = require('./Dynamo/dynamo-v1/places');
 
 
 const seeData = async () => {

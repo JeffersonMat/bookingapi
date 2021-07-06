@@ -1,4 +1,4 @@
-const { dynamoClient } = require("./dynamo")
+const { dynamoClient } = require("../dynamo")
 
 const TABLE_NAME = "Places"
 
@@ -25,6 +25,8 @@ const addOrUpdatePlace = async (place) => {
     TableName: TABLE_NAME,
     Item: place
   }
+
+  
     return await dynamoClient.put(params).promise();
 }
 
